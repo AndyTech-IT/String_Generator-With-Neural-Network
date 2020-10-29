@@ -1,0 +1,163 @@
+import numpy as np
+
+
+class NeuronNet:
+    def __init__(self, size=None, name='test'):
+        if size is None:
+            size = [32, 32, 32]
+        self.name = name
+        self.size = size
+        self.layers = size.__len__() - 1
+        self.syn = []
+        self.train_data = []
+        self.train_data_results = []
+        for layer in range(self.layers):
+            self.syn.append(2 * np.random.random((size[layer], size[layer + 1])) - 1)
+        pass
+
+    def calc(self, data):
+        for layer in self.syn:
+            data = 1 / (1 + np.exp(-(np.dot(data, layer))))
+        return data
+        pass
+
+    def add_train_data(self, train_data=None, result_data=None, mode='single'):
+        if result_data is None:
+            result_data = []
+        if train_data is None:
+            train_data = []
+        if mode == 'single':
+            self.train_data.append(train_data)
+            self.train_data_results.append(result_data)
+        elif mode == 'array':
+            for data in train_data:
+                self.train_data.append(data)
+            for data in result_data:
+                self.train_data_results.append(data)
+        pass
+
+    def training(self):
+        train_data = np.array(self.train_data)
+        results = np.array(self.train_data_results)
+        for i in range(100):
+            data = []
+            dat = train_data
+            data.append(dat)
+            index = 0
+            for layer in self.syn:
+                dat = 1 / (1 + np.exp(-(np.dot(dat, layer))))
+                data.append(dat)
+                index += 1
+            layer_delta = (results - dat) * (dat * (1 - dat))
+            data.pop(-1)
+            index -= 1
+            for result in data[-1::-1]:
+                delta = layer_delta.dot(self.syn[index].T)
+                self.syn[index] += result.T.dot(layer_delta)
+                layer_delta = delta * (result * (1 - result))
+                index -= 1
+
+    def load(self, name=None):
+        if name is None:
+            name = self.name
+        f = open(name + ' - тренеровочные данные.txt', 'r')
+        data = f.read().split('\n')
+        for string in data[:-1]:
+            nums = string.split(' ')
+            data = []
+            for char in nums[:-1]:
+                num = int(char)
+                data.append(num)
+            self.train_data.append(data)
+        f.close()
+
+        f = open(name + ' - тренеровочные результаты.txt', 'r')
+        data = f.read().split('\n')
+        for string in data[:-1]:
+            nums = string.split(' ')
+            data = []
+            for char in nums[:-1]:
+                num = int(char)
+                data.append(num)
+            self.train_data_results.append(data)
+        f.close()
+
+        f = open(name + ' - число слоёв.txt', 'r')
+        layers = int(f.readline())
+        layer_num = -1
+        f.close()
+
+        for layer in range(layers):
+            layer_num += 1
+            f = open(name + ' - слой №' + str(layer) + '.txt', "r")
+            line_num = -1
+            for line in f.readlines():
+                line_num += 1
+                line = line.split(' ')
+                syn_num = -1
+                for syn in line[0:-1]:
+                    syn_num += 1
+                    self.syn[layer_num][line_num][syn_num] = float(syn)
+            f.close()
+        pass
+
+    def save(self):
+        f = open(self.name + ' - тренеровочные результаты.txt', 'w')
+        for data in self.train_data_results:
+            if data is int:
+                num = str(data)
+                f.writelines(num)
+            else:
+                for num in data:
+                    num = str(num) + ' '
+                    f.write(num)
+            f.write('\n')
+        f.close()
+
+        f = open(self.name + ' - тренеровочные данные.txt', 'w')
+        for data in self.train_data:
+            if data is int:
+                num = str(data)
+                f.writelines(num)
+            else:
+                for num in data:
+                    num = str(num) + ' '
+                    f.write(num)
+            f.write('\n')
+        f.close()
+
+        f = open(self.name + ' - число слоёв.txt', 'w')
+        f.write(str(self.layers))
+        f.close()
+
+        layer_num = -1
+        for layer in self.syn:
+            layer_num += 1
+            f = open(self.name + ' - слой №' + str(layer_num) + '.txt', "w")
+            for neuron in layer:
+                string = ''
+                for weight in neuron:
+                    string += str(weight) + ' '
+                f.writelines(string + '\n')
+            f.close()
+
+
+
+inputs = 1
+outputs = 3
+net = NeuronNet([inputs, outputs])
+for i in range(3):
+    i_data = []
+    for j in range(inputs):
+        i_data.append(int(input('Введите значение->' + str(j))))
+    print("Вывод до обучения :", net.calc(i_data), '\n')
+    l_data = []
+    for j in range(outputs):
+        l_data.append(int(input('Введите ожидаемое значение->' + str(j))))
+    net.add_train_data(i_data, l_data)
+    net.training()
+    print("Вывод после обучения :", net.calc(i_data), '\n')
+net.save()
+print(net.train_data, '\n', net.train_data_results)
+net.load()
+print(net.train_data, '\n', net.train_data_results)

@@ -1,0 +1,28 @@
+c:\users\student\documents\visual studio 2010\Projects\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\bin\Debug\Генератор строк (с нейросетью).exe
+c:\users\student\documents\visual studio 2010\Projects\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\bin\Debug\Генератор строк (с нейросетью).pdb
+c:\users\student\documents\visual studio 2010\Projects\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.Properties.Resources.resources
+c:\users\student\documents\visual studio 2010\Projects\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).csproj.GenerateResource.Cache
+c:\users\student\documents\visual studio 2010\Projects\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).exe
+c:\users\student\documents\visual studio 2010\Projects\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).pdb
+c:\users\student\documents\visual studio 2010\Projects\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.Form1.resources
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\bin\Debug\Генератор строк (с нейросетью).exe
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\bin\Debug\Генератор строк (с нейросетью).pdb
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.Form1.resources
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.Properties.Resources.resources
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).csproj.GenerateResource.cache
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).csproj.CoreCompileInputs.cache
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).exe
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).pdb
+C:\Documents and Settings\ук\Мои документы\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).exe
+C:\Documents and Settings\ук\Мои документы\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).pdb
+C:\Documents and Settings\ук\Мои документы\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ук\Мои документы\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.Form1.resources
+C:\Documents and Settings\ук\Мои документы\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.Properties.Resources.resources
+C:\Documents and Settings\ук\Мои документы\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).csproj.GenerateResource.Cache
+C:\Documents and Settings\ук\Мои документы\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\bin\Debug\Генератор строк (с нейросетью).exe
+C:\Documents and Settings\ук\Мои документы\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\bin\Debug\Генератор строк (с нейросетью).pdb
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор строк (с нейросетью).csprojAssemblyReference.cache
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.CreateNetwork_Form.resources
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.SelectNetwork_Form.resources
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.Generating_Form.resources
+C:\Users\Евгения\Desktop\Andy\Генератор строк (с нейросетью)\Генератор строк (с нейросетью)\obj\x86\Debug\Генератор_строк__с_нейросетью_.Training_Form.resources
